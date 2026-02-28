@@ -1,1 +1,190 @@
-WIP
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIREXDF — Developer Portfolio</title>
+    <meta name="description" content="FIREXDF's portfolio — Developer & Creator. A Windows 7 inspired experience.">
+    <link rel="stylesheet" href="https://unpkg.com/7.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div role="progressbar" class="marquee loading-bar"></div>
+        </div>
+    </div>
+
+    <div class="desktop background" id="desktop">
+
+        <div class="window glass active win7-window" id="welcome-window" style="width: 480px;">
+            <div class="title-bar">
+                <div class="title-bar-text">Welcome</div>
+            </div>
+            <div class="window-body has-space">
+                <div class="welcome-content">
+                    <div class="welcome-avatar">
+                        <img src="./img/firexdf.png" alt="FIREXDF" class="avatar-img">
+                    </div>
+                    <h1 class="welcome-title">Hey, I'm <span class="accent">FIREXDF</span></h1>
+                    <p class="welcome-subtitle">A developer who creates projects around the theme of video games.</p>
+                    <div class="welcome-actions">
+                        <button class="default" id="btn-open-about">About Me</button>
+                        <button id="btn-open-projects">My Projects</button>
+                        <button id="btn-open-contact">Contact</button>
+                    </div>
+                </div>
+            </div>
+            <div class="status-bar">
+                <span class="status-bar-text">FIREXDF Portfolio v1.0</span>
+                <span class="status-bar-text">2026</span>
+            </div>
+        </div>
+
+        <div class="window glass active win7-window" id="about-window" style="width: 520px; display: none;">
+            <div class="title-bar">
+                <div class="title-bar-text">About Me — Properties</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body has-space">
+                <fieldset>
+                    <legend>Who am I?</legend>
+                    <p>
+                        I’m a 16-year-old developer from France passionate about coding and video games.
+                        I love creating software projects around gaming, always focusing on making them intuitive,
+                        accessible, and easy to use for everyone.
+                    </p>
+                    <br>
+                    <p>
+                        Fun fact : The wallpaper you're seeing is my real desktop background lol.
+                    </p>
+                </fieldset>
+            </div>
+            <div class="status-bar">
+                <span class="status-bar-text">About — FIREXDF</span>
+            </div>
+        </div>
+
+        <div class="window glass active win7-window" id="projects-window" style="width: 600px; display: none;">
+            <div class="title-bar">
+                <div class="title-bar-text">Projects — Explorer</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body has-space">
+                <div class="explorer-toolbar">
+                    <div class="explorer-path">
+                        <label>Address:</label>
+                        <input type="text" value="C:\Users\FIREXDF\Projects\" readonly class="explorer-address">
+                    </div>
+                </div>
+
+                <div class="project-file-view">
+                    <fieldset>
+                        <legend>FightPlanner</legend>
+                        <div class="project-detail">
+                            <div class="project-screenshot">
+                                <img src="./img/fightplanner.png" alt="FightPlanner" class="project-img">
+                            </div>
+                            <div class="project-meta">
+                                <p class="project-desc">
+                                    SSBU Fight Planner is an Super Smash Bros. Ultimate Mod Manager that allows you to
+                                    easily enable and disable Installed Mods as well as downloading them from the
+                                    Program & GameBanana itself offering an easy to access Modding Experience.
+                                </p>
+                                <br>
+                                <div class="project-properties">
+                                    <div class="prop-row">
+                                        <label>Type:</label>
+                                        <span>Desktop Application</span>
+                                    </div>
+                                    <div class="prop-row">
+                                        <label>Tech Stack:</label>
+                                        <span>Electron, HTML/CSS/JS</span>
+                                    </div>
+                                    <div class="prop-row">
+                                        <label>Status:</label>
+                                        <span class="status-active">Active Development</span>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="project-actions">
+                                    <button
+                                        onclick="window.open('https://github.com/FIREXDF/SSBUFightPlanner', '_blank')">
+                                        <i class="fa-brands fa-github" style="margin-right: 4px;"></i>
+                                        View on GitHub
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="status-bar">
+                <span class="status-bar-text">1 item</span>
+                <span class="status-bar-text">Projects Explorer</span>
+            </div>
+        </div>
+
+        <div class="window glass active win7-window" id="contact-window" style="width: 460px; display: none;">
+            <div class="title-bar">
+                <div class="title-bar-text">Contact</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body has-space">
+                <fieldset>
+                    <legend>Get in touch</legend>
+                    <p>Want to get in touch? Here’s where you can contact me directly!</p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Links</legend>
+                    <div class="contact-links-list">
+                        <a href="mailto:firexdf@shtrdchs.fr" class="contact-link-row">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>firexdf@shtrdchs.fr</span>
+                        </a>
+                        <a href="https://github.com/firexdf" target="_blank" class="contact-link-row">
+                            <i class="fa-brands fa-github"></i>
+                            <span>github.com/firexdf</span>
+                        </a>
+                        <div class="contact-link-row discord-row">
+                            <i class="fa-brands fa-discord"></i>
+                            <span>FIREXDF</span>
+                        </div>
+                    </div>
+                </fieldset>
+                <br>
+                <div class="contact-bottom-actions">
+                    <button class="default" onclick="window.location.href='mailto:firexdf@shtrdchs.fr'">Send
+                        Email</button>
+                    <button onclick="closeWindow('contact-window')">Close</button>
+                </div>
+            </div>
+            <div class="status-bar">
+                <span class="status-bar-text">3 contacts available</span>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
