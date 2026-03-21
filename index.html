@@ -36,6 +36,7 @@
                         <button class="default" id="btn-open-about">About Me</button>
                         <button id="btn-open-projects">My Projects</button>
                         <button id="btn-open-contact">Contact</button>
+                        <button id="btn-open-settings">Settings</button>
                     </div>
                 </div>
             </div>
@@ -63,9 +64,6 @@
                         intuitive user interfaces that are easy for everyone to understand and use.
                     </p>
                     <br>
-                    <p>
-                        Fun fact : The wallpaper you're seeing is my real desktop background lol.
-                    </p>
                 </fieldset>
             </div>
             <div class="status-bar">
@@ -129,10 +127,44 @@
                             </div>
                         </div>
                     </fieldset>
+                    <fieldset>
+                        <legend>Shattered Chaos</legend>
+                        <div class="project-detail">
+                            <div class="project-screenshot">
+                                <img src="./img/shtrdchswebsite.png" alt="Shattered Chaos" class="project-img">
+                            </div>
+                            <div class="project-meta">
+                                <p class="project-desc">
+                                    Shattered Chaos Website of our team.
+                                </p>
+                                <br>
+                                <div class="project-properties">
+                                    <div class="prop-row">
+                                        <label>Type:</label>
+                                        <span>Website</span>
+                                    </div>
+                                    <div class="prop-row">
+                                        <label>Tech Stack:</label>
+                                        <span>HTML/CSS/JS</span>
+                                    </div>
+                                    <div class="prop-row">
+                                        <label>Status:</label>
+                                        <span class="status-active">Online</span>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="project-actions">
+                                    <button onclick="window.open('https://shtrdchs.fr', '_blank')">
+                                        Visit Website
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
                 </div>
             </div>
             <div class="status-bar">
-                <span class="status-bar-text">1 item</span>
+                <span class="status-bar-text">2 items</span>
                 <span class="status-bar-text">Projects Explorer</span>
             </div>
         </div>
@@ -178,6 +210,31 @@
             </div>
             <div class="status-bar">
                 <span class="status-bar-text">3 contacts available</span>
+            </div>
+        </div>
+
+        <div class="window glass active win7-window" id="settings-window" style="width: 520px; display: none;">
+            <div class="title-bar">
+                <div class="title-bar-text">Settings</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body has-space">
+                <fieldset>
+                    <legend>Wallpaper</legend>
+                    <div class="wallpaper-list" id="wallpaper-options"></div>
+                </fieldset>
+                <br>
+                <div class="settings-bottom-actions">
+                    <button class="default" id="btn-reset-wallpaper">Use Random Wallpaper</button>
+                    <button onclick="closeWindow('settings-window')">Close</button>
+                </div>
+            </div>
+            <div class="status-bar">
+                <span class="status-bar-text" id="wallpaper-status">Loading wallpapers...</span>
             </div>
         </div>
 

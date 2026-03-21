@@ -1,0 +1,40 @@
+{
+  "backgrounds": [
+    {
+      "name": "Default Desktop",
+      "file": "default-desktop.png"
+    },
+    {
+      "name": "Snow Panoramic",
+      "file": "snow_panoramic12.jpg"
+    },
+    {
+      "name": "Nightfall Starlight",
+      "file": "nightfall_starlight_panoramic6.jpg"
+    },
+    {
+      "name": "Konachan Lain",
+      "file": "Konachan.com - 9544 iwakura_lain serial_experiments_lain.jpg"
+    },
+    {
+      "name": "Konachan Sample",
+      "file": "Konachan.com - 93853 sample.jpg"
+    },
+    {
+      "name": "Cool wallpaper",
+      "file": "img303.jpg"
+    },
+    {
+      "name": "Cool one too",
+      "file": "img302.png"
+    },
+    {
+      "name": "Bocchi The Rock",
+      "file": "bocchi-the-rock-character-blonde-anime-character-wallpaper-2560x1440_51.jpg"
+    },
+    {
+      "name": "Beaches Panoramic",
+      "file": "beaches_panoramic5.jpg"
+    }
+  ]
+}
