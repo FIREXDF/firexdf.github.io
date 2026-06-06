@@ -35,6 +35,7 @@
                     <div class="welcome-actions">
                         <button class="default" id="btn-open-about">About Me</button>
                         <button id="btn-open-projects">My Projects</button>
+                        <button id="btn-open-spotify">Spotify</button>
                         <button id="btn-open-contact">Contact</button>
                         <button id="btn-open-settings">Settings</button>
                     </div>
@@ -168,6 +169,48 @@
             <div class="status-bar">
                 <span class="status-bar-text">2 items</span>
                 <span class="status-bar-text">Projects Explorer</span>
+            </div>
+        </div>
+
+        <div class="window glass active win7-window spotify-window" id="spotify-window" style="width: 340px;">
+            <div class="title-bar">
+                <div class="title-bar-text">Spotify - Now Playing</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body has-space">
+                <div class="spotify-player" id="spotify-player">
+                    <div class="spotify-cover-wrap">
+                        <img src="./img/firexdf.png" alt="Spotify cover" class="spotify-cover" id="spotify-cover">
+                    </div>
+                    <div class="spotify-info">
+                        <div class="spotify-state" id="spotify-state">
+                            <span id="spotify-state-text">Not playing</span>
+                        </div>
+                        <div class="spotify-track" id="spotify-track">Not playing anything</div>
+                        <div class="spotify-artist" id="spotify-artist">Spotify is inactive</div>
+                        <div class="spotify-progress" aria-hidden="true">
+                            <span id="spotify-progress-bar"></span>
+                        </div>
+                        <div class="spotify-time" id="spotify-time">0:00 / 0:00</div>
+                    </div>
+                </div>
+                <div class="spotify-actions">
+                    <button class="default" id="btn-refresh-spotify">
+                        <i class="fa-solid fa-rotate-right" style="margin-right: 4px;"></i>
+                        Update
+                    </button>
+                    <button id="btn-open-spotify-link">
+                        <i class="fa-brands fa-spotify" style="margin-right: 4px;"></i>
+                        Open
+                    </button>
+                </div>
+            </div>
+            <div class="status-bar">
+                <span class="status-bar-text" id="spotify-status">Not playing anything</span>
             </div>
         </div>
 

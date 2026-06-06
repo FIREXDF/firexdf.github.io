@@ -255,6 +255,102 @@ body {
   gap: 8px;
 }
 
+.spotify-window {
+  height: auto;
+  max-height: none;
+  overflow: hidden;
+}
+
+.spotify-window .window-body {
+  max-height: none;
+  overflow: hidden;
+}
+
+.spotify-player {
+  display: grid;
+  grid-template-columns: 76px 1fr;
+  gap: 12px;
+  align-items: center;
+}
+
+.spotify-cover-wrap {
+  width: 76px;
+  height: 76px;
+  border: 1px solid #b7b7b7;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #ededed;
+  box-shadow: inset 0 0 0 1px #fff;
+}
+
+.spotify-cover {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.spotify-info {
+  min-width: 0;
+}
+
+.spotify-state {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 5px;
+  font-size: 11px;
+  color: #555;
+}
+
+.spotify-track {
+  overflow: hidden;
+  margin-bottom: 3px;
+  color: #111;
+  font-size: 14px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.spotify-artist {
+  overflow: hidden;
+  color: #555;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.spotify-progress {
+  height: 7px;
+  margin-top: 10px;
+  padding: 1px;
+  border: 1px solid #bdbdbd;
+  background: #efefef;
+}
+
+.spotify-progress span {
+  display: block;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(to right, #77d48a, #1db954);
+  transition: width 0.25s ease;
+}
+
+.spotify-time {
+  margin-top: 4px;
+  color: #555;
+  font-size: 11px;
+  text-align: right;
+}
+
+.spotify-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 12px;
+}
+
 .wallpaper-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -373,6 +469,22 @@ body {
     width: 100% !important;
     min-width: 0;
     max-width: 100%;
+    flex: 0 0 auto;
+  }
+
+  #welcome-window {
+    order: 0;
+  }
+
+  #spotify-window {
+    order: 1;
+  }
+
+  #about-window,
+  #projects-window,
+  #contact-window,
+  #settings-window {
+    order: 2;
   }
 
   .win7-window .title-bar {
@@ -415,6 +527,20 @@ body {
   }
 
   .settings-bottom-actions button {
+    width: 100%;
+  }
+
+  .spotify-window {
+    right: auto;
+    bottom: auto;
+    flex-shrink: 0;
+  }
+
+  .spotify-actions {
+    flex-direction: column;
+  }
+
+  .spotify-actions button {
     width: 100%;
   }
 }
